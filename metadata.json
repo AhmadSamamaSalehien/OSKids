@@ -1,0 +1,6 @@
+{
+  "name": "OS Kids",
+  "description": "A playful OS Kids web operating system built with Neobrutalism UI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

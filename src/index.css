@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Neobrutalism Solid Shadow Utilities */
+  .neo-shadow-sm {
+    box-shadow: 2px 2px 0px 0px #000000;
+  }
+  .neo-shadow {
+    box-shadow: 4px 4px 0px 0px #000000;
+  }
+  .neo-shadow-md {
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+  .neo-shadow-lg {
+    box-shadow: 8px 8px 0px 0px #000000;
+  }
+  .neo-shadow-hover {
+    transition: all 0.15s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .neo-shadow-hover:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+  .neo-shadow-hover:active {
+    transform: translate(2px, 2px);
+    box-shadow: 1px 1px 0px 0px #000000;
+  }
+  
+  /* Solid border utilities */
+  .neo-border-sm {
+    border: 2px solid #000000;
+  }
+  .neo-border {
+    border: 3px solid #000000;
+  }
+  .neo-border-lg {
+    border: 4px solid #000000;
+  }
+}
+
+/* Custom Scrollbars in Neobrutalist Style */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-left: 2px solid #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Zero Glassmorphism Mandate - Strictly solid selection */
+::selection {
+  background-color: #ffe600;
+  color: #000000;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: #0f172a;
+}
